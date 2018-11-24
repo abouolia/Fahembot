@@ -1,0 +1,4 @@
+     0.000000 execve("/usr/bin/sudo", ["sudo", "echo", "hi"], [/* 22 vars */]) = -1 EPERM (Operation not permitted)
+     0.001000 write(2, "strace: exec: Operation not perm"..., 38) = 38
+     0.001002 exit_group(1)             = ?
+     0.000000 +++ exited with 1 +++

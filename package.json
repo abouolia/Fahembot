@@ -1,0 +1,40 @@
+{
+  "name": "fahem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:debug": "node --inspect index.js",
+    "db:setup": "knex migrate:latest --knexfile fahem/knexfile.js",
+    "test": "mocha tests/**/*_test.js",
+    "test:watch": "mocha --watch --inspect tests/**/*_test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "commander": "^2.16.0",
+    "express": "^4.16.3",
+    "knex": "^0.14.6",
+    "loading-cli": "^1.0.8",
+    "lodash": "^4.17.10",
+    "lodash.isplainobject": "^4.0.6",
+    "mathjs": "^4.4.2",
+    "mocha": "^5.2.0",
+    "mock-knex": "^0.4.0",
+    "mysql": "^2.15.0",
+    "socket.io": "^2.1.1",
+    "sprintf": "^0.1.5",
+    "sprintf-js": "^1.1.1",
+    "sqlite3": "^4.0.2",
+    "validate.js": "^0.12.0"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "knex-factory": "0.0.5"
+  }
+}
